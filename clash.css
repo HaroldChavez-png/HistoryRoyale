@@ -1,0 +1,390 @@
+:root {
+    --cr-blue: #0052cc;        /* azul */
+    --cr-gold: #f2b01e;        /* dorado */
+    --cr-red: #d62828;         /* rojo */
+    --cr-stone: #444;
+    --cr-light-stone: #f8f9fa;
+    --transition: 0.3s ease;
+    --transition-slow: 0.4s ease;
+}
+
+
+/* VARIABLES Y COLORES DEL SITIO*/
+:root {
+    --cr-blue: #0052cc;        /* Azul principal de Clash Royale */
+    --cr-gold: #f2b01e;        /* Dorado para detalles y bordes */
+    --cr-red: #d62828;         /* Rojo para acentos */
+    --cr-stone: #444;          /* Gris piedra para fondos */
+    --cr-light-stone: #f8f9fa; /* Gris claro para textos */
+    --transition: 0.3s ease;   /* Transición rápida */
+    --transition-slow: 0.4s ease; /* Transición lenta */
+}
+
+/* ESTILOS GENERALES DEL SITIO*/
+body {
+    /* Fuente principal y fondo general */
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #544296, #1a2533);
+    background-attachment: fixed;
+    color: var(--cr-light-stone);
+    padding-top: 70px; /* Espacio para la navbar fija */
+}
+
+/* Títulos principales y secundarios */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    color: var(--cr-gold);
+    text-shadow: 2px 2px 4px rgba(226, 12, 12, 0.5);
+}
+
+/* Clase para aplicar la fuente Bangers a cualquier elemento */
+.bangers-font {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    color: var(--cr-gold);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* BARRA DE NAVEGACIÓN (NAVBAR) */
+.navbar {
+    /* Barra superior fija y semitransparente */
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 3px solid var(--cr-gold);
+}
+
+.navbar-brand {
+    /* Logo o nombre del sitio en la navbar */
+    font-family: 'Bangers', cursive;
+    font-size: 1.8rem;
+    color: var(--cr-gold) !important;
+}
+
+.nav-link {
+    /* Enlaces de navegación */
+    color: var(--cr-light-stone) !important;
+    font-weight: 600;
+    transition: color var(--transition), transform var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    /* Efecto al pasar el mouse */
+    color: var(--cr-gold) !important;
+    transform: scale(1.1);
+}
+
+
+/* BOTONES  */
+.btn-royale {
+    /* Botón con gradiente y borde dorado */
+    background: linear-gradient(135deg, var(--cr-blue), var(--cr-red));
+    border: 2px solid var(--cr-gold);
+    color: white;
+    font-weight: 700;
+    transition: all var(--transition);
+    border-radius: 8px;
+}
+
+.btn-royale:hover {
+    /* Efecto hover: invierte gradiente y resalta color */
+    background: linear-gradient(135deg, var(--cr-red), var(--cr-blue));
+    color: var(--cr-gold);
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(242, 176, 30, 0.4);
+}
+
+/* PIE DE PÁGINA (FOOTER) */
+footer {
+    /* Fondo oscuro y borde dorado arriba */
+    background-color: #1a1a1a;
+    border-top: 3px solid var(--cr-gold);
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+/* Icono de corazón en el footer */
+.heart-red { color: var(--cr-red); }
+
+
+/* =============================
+   TÍTULOS DE SECCIÓN Y LÍNEAS
+   ============================= */
+.section-title {
+    /* Título destacado con línea decorativa */
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.section-title::after {
+    /* Línea dorada debajo del título */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--cr-gold), transparent);
+    border-radius: 2px;
+}
+
+/* Línea horizontal personalizada */
+hr { border-color: var(--cr-gold) !important; opacity: 0.3; margin: 3rem 0; }
+
+
+/* =============================
+   ALERTAS Y CAJAS DE CONTENIDO
+   ============================= */
+.alert-custom {
+    /* Caja de alerta personalizada */
+    background-color: rgba(68, 68, 68, 0.8);
+    border-left: 4px solid var(--cr-gold);
+    border-radius: 8px;
+}
+.alert-info-soft {
+    /* Alerta informativa suave */
+    background-color: rgba(0, 82, 204, 0.15) !important;
+    border-color: var(--cr-blue) !important;
+    color: var(--cr-light-stone) !important;
+}
+.alert-heading {
+    /* Título de alerta */
+    color: var(--cr-gold);
+    margin-bottom: 1rem;
+}
+
+
+/* =============================
+   DATOS CURIOSOS (FUN FACTS)
+   ============================= */
+.fun-fact-alert {
+    /* Caja para datos curiosos */
+    background-color: rgba(255, 193, 7, 0.15) !important;
+    color: #000 !important;
+    border-left: 6px solid var(--cr-gold) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+    transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+}
+
+/* Variantes de color para diferentes datos curiosos */
+.fun-color-0 { background-color: rgba(214, 16, 16, 0.89) !important; border-left-color: rgba(242,176,30,0.9) !important; color: #e2e1e1 !important; }
+.fun-color-1 { background-color: rgb(66, 160, 231) !important; border-left-color: rgba(14, 223, 49, 0.9) !important; color: #000 !important; }
+.fun-color-2 { background-color: rgb(245, 206, 33) !important; border-left-color: rgb(228, 32, 32) !important; color: #161414 !important; }
+.fun-color-3 { background-color: rgba(111,66,193,0.18) !important; border-left-color: rgba(111,66,193,0.9) !important; color: #fff !important; }
+.fun-color-4 { background-color: rgba(255,107,107,0.18) !important; border-left-color: rgba(255,107,107,0.9) !important; color: #fff !important; }
+.fun-fact-alert p { color: inherit !important; }
+
+
+/* =============================
+   HERO - SECCIÓN PRINCIPAL
+   ============================= */
+.static-hero {
+    /* Sección principal con imagen de fondo y gradiente */
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(16, 8, 66, 0.45)), url("imagenes/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    /* Contenedor oscuro y redondeado para el texto principal */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 2rem;
+}
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+}
+.hero-content .lead {
+    font-size: 1.5rem;
+    color: var(--cr-light-stone);
+}
+
+
+/*(cards.html)*/
+.evolution-spotlight {
+    /* Fondo especial para sección de evolución */
+    background: linear-gradient(135deg, rgba(0,82,204,0.1), rgba(242,176,30,0.1));
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid var(--cr-gold);
+    backdrop-filter: blur(5px);
+}
+.special-event-spotlight {
+    /* Fondo para eventos especiales */
+    background: linear-gradient(135deg, rgba(242,176,30,0.15), rgba(212,40,40,0.1));
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px dashed var(--cr-gold);
+    backdrop-filter: blur(5px);
+}
+.icon-highlight { color: var(--cr-red); font-size: 1.8rem; margin-right: 10px; }
+.text-gold { color: var(--cr-gold) !important; }
+.evolution-spotlight h2 { color: var(--cr-gold); font-family: 'Bangers', cursive; letter-spacing: 1px; }
+.evolution-spotlight .card-royale { border: none; box-shadow: none; }
+.evolution-spotlight .card-evolved { border: 2px solid rgba(216,61,255,0.7); box-shadow: 0 6px 18px rgba(216,61,255,0.22); background: linear-gradient(145deg,#1a1257 0%,#2a1f66 100%); }
+.evolution-spotlight .card-evolved::before { background: linear-gradient(45deg, rgba(216,61,255,0.12), rgba(130,61,255,0.12)); }
+.evolution-spotlight .card-evolved .card-body { background: linear-gradient(180deg, rgba(26,18,87,0.9) 0%, rgba(42,31,102,0.9) 100%); color: var(--cr-light-stone); }
+.evolution-spotlight .card-body, .evolution-spotlight .card-text { color: var(--cr-light-stone); }
+.evolution-spotlight .card-img-top { height: auto; max-height: 400px; width: 100%; object-fit: contain; background-color: rgba(0,0,0,0.08); border-radius: 10px 10px 0 0; padding: 10px; }
+.evolution-spotlight .card-royale { height: 100%; }
+.evolution-spotlight .card-body { padding: 15px; }
+
+
+/*  TARJETAS BASE (card-royale) */
+.card-royale {
+    /* Tarjeta base con gradiente y borde dorado */
+    background: linear-gradient(145deg, #1a2533 0%, #2c3e50 100%);
+    border: 2px solid var(--cr-gold);
+    border-radius: 12px;
+    transition: all var(--transition);
+    overflow: hidden;
+    position: relative;
+}
+.card-royale::before {
+    /* Efecto de brillo al hacer hover */
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgba(0,82,204,0.06), rgba(242,176,30,0.04));
+    opacity: 0;
+    transition: opacity var(--transition);
+    pointer-events: none;
+}
+.card-royale:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(242,176,30,0.35);
+    border-color: #fff;
+}
+.card-royale:hover::before { opacity: 1; }
+.card-royale .card-title { color: var(--cr-gold); font-weight: 700; }
+.card-royale .card-text { color: var(--cr-light-stone); }
+
+
+/* GALERÍA DE IMÁGENES (gallery.html)*/
+.gallery-item {
+    /* Contenedor de imagen con borde dorado y efecto hover */
+    overflow: hidden;
+    border-radius: 12px;
+    border: 3px solid var(--cr-gold);
+    cursor: pointer;
+    transition: all var(--transition);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    height: 250px;
+    position: relative;
+}
+.gallery-item::before {
+    /* Gradiente dorado al hacer hover */
+    content: '';
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: linear-gradient(135deg, rgba(242,176,30,0.2), transparent);
+    z-index:1;
+    opacity:0;
+    transition: opacity var(--transition);
+}
+.gallery-item img {
+    width:100%; height:100%; object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(242,176,30,0.4);
+    border-color:#fff;
+}
+.gallery-item:hover::before { opacity:1; }
+.gallery-item:hover img { transform: scale(1.1); }
+
+/*    REPRODUCTOR DE VIDEO */
+.video-container {
+    /* Contenedor general del reproductor */
+    position: relative;
+    background: linear-gradient(135deg, rgba(0,82,204,0.1), rgba(212,40,40,0.1));
+    padding:30px;
+    border-radius:15px;
+    backdrop-filter: blur(5px);
+}                       
+.video-wrapper {
+    /* Marco del video */
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(242,176,30,0.3);
+    border: 3px solid var(--cr-gold);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.video-element {
+    background: #000;
+    width:100%; height:100%; display:block;
+}
+
+
+/* LÍNEA DE TIEMPO (history.html) */
+.timeline {
+    /* Lista principal de la línea de tiempo */
+    list-style: none;
+    padding: 0;
+    position: relative;
+    margin: 40px 0;
+}
+.timeline::before {
+    /* Línea vertical central */
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height:100%;
+    background: linear-gradient(180deg, var(--cr-gold), var(--cr-blue), var(--cr-red));
+}
+.timeline-item {
+    /* Cada evento de la línea de tiempo */
+    margin-bottom: 50px;
+    position: relative;
+}
+.timeline-item:nth-child(odd) .timeline-content {
+    /* Eventos a la izquierda */
+    margin-left: 0;
+    margin-right: auto;
+    width: 48%;
+    text-align: right;
+    padding-right: 40px;
+}
+.timeline-item:nth-child(even) .timeline-content {
+    /* Eventos a la derecha */
+    margin-left: auto;
+    margin-right: 0;
+    width: 48%;
+    text-align: left;
+    padding-left: 40px;
+}
+.timeline-icon {
+    /* Icono circular de cada evento */
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width:60px; height:60px;
+    background: linear-gradient(135deg,var(--cr-blue),var(--cr-red));
+    border: 3px solid var(--cr-gold);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.8rem; color: var(--cr-gold);
+    top:0; z-index:2;
+}
+.timeline-date { color: var(--cr-gold); font-weight:700; font-size:1.1rem; }
+.timeline-content h3 { margin:15px 0; color: var(--cr-gold); }
+.timeline-content p, .timeline-content ol, .timeline-content ul { color: var(--cr-light-stone); line-height:1.6; }
+
+/* FIN DEL CSS */

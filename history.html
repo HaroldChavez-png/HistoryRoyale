@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- PÁGINA DE HISTORIA - History Royale
+    Descripción: Línea de tiempo interactiva con eventos importantes de Clash Royale-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - History Royale</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS personalizado  -->
+    <link rel="stylesheet" href="clash.css">
+</head>
+<body>
+<!-- Hero section con encabezado de la página -->
+<header class="static-hero">
+        <div class="hero-content">
+            <h1 class="display-3">History Royale</h1>
+            <p class="lead">Conoce la historia detrás de Clash Royale y los cambios más relevantes a lo largo de los años.</p>
+        </div>
+    </header>
+    
+    <!-- Barra de navegación: enlaces rápidos a secciones principales del sitio -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-gem"></i> History Royale</a>
+            
+            <!-- Menú navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Enlace interno a página de inicio -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                    </li>
+                    <!-- Enlace actual -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="history.html"><i class="bi bi-calendar-event-fill"></i> Historia</a>
+                    </li>
+                    <!-- Enlace interno a página de cartas -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="cards.html"><i class="bi bi-layers-fill"></i> Cartas</a>
+                    </li>
+                    <!-- Enlace interno a página de galería -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html"><i class="bi bi-images"></i> Galería</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="container my-5">
+        <!-- Sección de título y descripción -->
+        <section class="text-center mb-5">
+            <!-- Encabezado principal -->
+            <h1 class="display-3">Línea de Tiempo</h1>
+            <!-- Descripción de la sección -->
+            <p class="lead text-white-50">Un recorrido por las actualizaciones y temporadas más importantes de Clash Royale.</p>
+        </section>
+
+        <!-- Lista de la línea de tiempo: cada elemento representa un evento o actualización importante -->
+        <ul class="timeline">
+            <!-- EVENTO 1: Lanzamiento Global -->
+            <li class="timeline-item">
+                <!-- Icono visual del evento en la línea -->
+                <div class="timeline-icon"><i class="bi bi-rocket-launch-fill"></i></div>
+                <!-- Contenedor del contenido del evento -->
+                <div class="timeline-content">
+                    <!-- Fecha del evento -->
+                    <span class="timeline-date">Enero 2016</span>
+                    <!-- Título del evento -->
+                    <h3>Lanzamiento Global</h3>
+                    <!-- Descripción del evento -->
+                    <p>Clash Royale se lanza oficialmente en todo el mundo, combinando defensa de torres, cartas coleccionables y estrategia en tiempo real.</p>
+                </div>
+            </li>
+            
+            <!-- EVENTO 2: Introducción de las Ligas (navega para ver más detalles) -->
+            <li class="timeline-item">
+                <div class="timeline-icon"><i class="bi bi-trophy-fill"></i></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Marzo 2017</span>
+                    <h3>Introducción de las Ligas</h3>
+                    <p>Se añade el sistema de Ligas, ofreciendo a los jugadores un camino competitivo más allá de las arenas y recompensas de temporada.</p>
+                    
+                    <!-- LISTA ORDENADA: Las ligas principales en orden de rango -->
+                    <ol>
+                        <li>Combatientes</li>
+                        <li>Maestros</li>
+                        <li>Campeones</li>
+                    </ol>
+                </div>
+            </li>
+            
+            <!-- EVENTO 3: Guerra de Clanes 1.0 (modo cooperativo introducido) -->
+            <li class="timeline-item">
+                <div class="timeline-icon"><i class="bi bi-shield-shaded"></i></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Octubre 2017</span>
+                    <h3>Guerra de Clanes 1.0</h3>
+                    <p>Se introducen las Guerras de Clanes, un modo cooperativo donde los clanes compiten por cofres de guerra y gloria.</p>
+                </div>
+            </li>            
+            <!-- EVENTO 4: Llega el Pass Royale -->
+            <li class="timeline-item">
+                <div class="timeline-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Julio 2019</span>
+                    <h3>Llega el Pass Royale</h3>
+                    <p>Nace el Pass Royale, un sistema de progresión de temporada con recompensas exclusivas, skins para torres y ventajas.</p>
+                    
+                    <!-- LISTA NO ORDENADA: Características principales del Pass -->
+                    <ul>
+                        <li>Recompensas exclusivas semanales y mensuales</li>
+                        <li>Aspectos (skins) personalizados para torres</li>
+                        <li>Entradas ilimitadas a desafíos especiales</li>
+                        <li>Emotes y objetos decorativos exclusivos</li>
+                    </ul>
+                </div>
+            </li>
+            
+            <!-- EVENTO 5: Guerra de Clanes 2.0 (renovación del modo con nuevas mecánicas) -->
+            <li class="timeline-item">
+                <div class="timeline-icon"><i class="bi bi-water"></i></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Agosto 2020</span>
+                    <h3>Guerra de Clanes 2.0</h3>
+                    <p>Una renovación completa del sistema, introduciendo el Coliseo y batallas en barco para una experiencia más dinámica y emocionante.</p>
+                    
+                    <!-- LISTA ANIDADA: Nuevas características con sub-características -->
+                    <p class="mt-2"><strong class="text-gold">Nuevos Modos de Batalla:</strong></p>
+                    <ul>
+                        <li>
+                            1: Coliseo
+                            <!-- Sub-lista anidada -->
+                            <ul>
+                                <li>Batallas 1v1 en arena especial</li>
+                                <li>Desafíos de campeonato</li>
+                                <li>Recompensas de batalla épicas</li>
+                            </ul>
+                        </li>
+                        <li>
+                            2: Batallas en Barco
+                            <!-- Otra sub-lista anidada -->
+                            <ul>
+                                <li>Modo cooperativo con compañeros</li>
+                                <li>Defensa de objetivos flotantes</li>
+                                <li>Oleadas de enemigos progresivas</li>
+                            </ul>
+                        </li>
+                        <li>
+                            3: Enfrentamientos de Clan
+                            <!-- Tercera sub-lista anidada -->
+                            <ul>
+                                <li>Competencia entre clanes</li>
+                                <li>Cofres de victoria semanales</li>
+                                <li>Clasificaciones globales</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer class="text-center text-white-50">
+        <div class="container">
+            <p class="mb-1">&copy; 2025 History Royale. Este es un proyecto de fans y no está afiliado a Supercell.</p>
+            <p>Diseñado con <i class="bi bi-heart-fill heart-red"></i></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle - Necesario para interactividad -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

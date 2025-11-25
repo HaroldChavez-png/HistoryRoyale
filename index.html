@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>History Royale - La Evolución del Juego</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="clash.css">
+</head>
+<body>
+    <details>
+        <summary> 
+              <i class="bi bi-info-circle-fill text-gold"></i> <span class="text-gold">¡Bienvenido!</span>
+          
+         </summary>
+        <p>
+        <i class ="bi bi-gem text-gold text-gold"></i> <span class="text-gold">Explora las secciones de Historia, Cartas y Galería para descubrir la evolución de Clash Royale(Ponganos 10 Teacher<i class="bi bi-heart-fill heart-red"></i>).</span>
+        </p>
+    </summary>
+</details>
+ 
+    <!-- Barra de navegación: enlaces principales del sitio (Inicio, Historia, Cartas, Galería) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-gem"></i> History Royale</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+
+                        <!-- Enlace principal: vuelve a la página de inicio -->
+                        <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-door-fill"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html"><i class="bi bi-layers-fill"></i> Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cards.html"><i class="bi bi-layers-fill"></i> Cartas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html"><i class="bi bi-images"></i> Galería</a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="static-hero">
+        <div class="hero-content">
+            <h1 class="display-3">History Royale</h1>
+            <p class="lead">Un viaje nostálgico por la evolución de uno de los juegos móviles más icónicos.</p>
+        </div>
+    </header>
+    
+    <main class="container my-5">
+        
+        <!-- Sección de Introducción -->
+        <section class="text-center mb-5">
+            <h2 class="display-4">¡Bienvenido a la Arena del Tiempo!</h2>
+            <p class="lead text-white-50">
+                Este es un espacio para veteranos y nuevos jugadores. Aqui podras explorar la fascinante historia de Clash Royale desde sus inicios,
+                observa la transformación de tus cartas favoritas y revive momentos o eventos inolvidables en nuestra galería.
+            </p>
+        </section>
+
+        <!-- Alerta de Novedad -->
+        <div id="funFactAlert" class="alert alert-warning border-2 border-warning alert-custom fun-fact-alert fun-color-0" role="alert">
+                    <h4 class="alert-heading bangers-font"><i class="bi bi-stars"></i> ¿Sabías que...?</h4>
+                    <p id="funFactText">El Golem de Hielo, antes de ser una tropa, fue una idea para un hechizo que ralentizaba todo en un área. ¡La evolución de las ideas es parte del juego!</p>
+                </div>
+
+        <!-- Secciones de Contenido -->
+        <section class="mt-5">
+            <div class="row g-4">
+                <!-- Columna 1: Historia -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-royale h-100">
+                        <img src="imagenes/4.jpg" class="card-img-top" alt="Historia del Juego">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Historia y Temporadas</h3>
+                            <p class="card-text">Navega por una línea de tiempo interactiva que documenta cada gran actualización y temporada que ha moldeado el juego.</p>
+                                    <!-- Botón: abre la página de Historia en una nueva pestaña -->
+                                    <a href="history.html" class="btn btn-royale" target="_blank" rel="noopener">Ver la Historia <i class="bi bi-arrow-right-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-royale h-100">
+                        <img src="imagenes/5.jpg" alt="Evolución de Cartas">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Evolución de Cartas</h3>
+                            <p class="card-text">Compara el antes y el después de las cartas. Desde cambios de arte hasta balances que definieron el meta.</p>
+                            <a href="cards.html" class="btn btn-royale">Explorar Cartas <i class="bi bi-arrow-right-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna 3: Galería -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="card card-royale h-100">
+                        <div class="card-body text-center">
+                            <img src="imagenes/6.jpg" class="card-img-top" alt="Galería de Recuerdos">
+                            <h3 class="card-title">Galería de Recuerdos</h3>
+                            <p class="card-text">Una colección de imágenes y videos de momentos clave, interfaces antiguas y recuerdos que te harán sentir nostalgia.</p>
+                            <a href="gallery.html" class="btn btn-royale">Ver Galería <i class="bi bi-arrow-right-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer  -->
+    
+   <footer class="text-center text-white-50">
+        <div class="container">
+            <p class="mb-1">&copy; 2025 History Royale. Este es un proyecto de fans y no está afiliado a Supercell.</p>
+            <p>Diseñado con <i class="bi bi-heart-fill heart-red"></i>.</p>
+        </div>
+    </footer>
+
+    <!-- Script para Datos Curiosos Dinámicos -->
+    <script>
+        // Datos curiosos (lista limpia)
+        const funFacts = [
+            "El Golem de Hielo, antes de ser una tropa, fue una idea para un hechizo que ralentizaba todo en un área.",
+            "El sonido del P.E.K.K.A. al desplegarse ('Butterfly') fue elegido por un concurso en Facebook.",
+            "En las primeras versiones del juego, el elixir se regeneraba más lentamente.",
+            "La carta del Tronco es la única legendaria que se inspiró en una queja de la comunidad sobre los barriles de duendes.",
+            "Originalmente, el Mago Eléctrico iba a ser una carta épica llamada 'Zap Wizard'.",
+            "En los archivos del juego se comenta que el Minero y el Gran Minero son calvos y por eso llevan casco.",
+            "Mago de Hielo: Sus líneas de voz están en finlandés, el idioma natal de Supercell.",
+            "Curandera Guerrera: En la historia del juego, las Curanderas Guerreras son ciegas, aunque esto no parece afectarles en la batalla.",
+            "Aunque parezca raro, todos los esqueletos del ejército tienen nombre. Estos nombres son: Larry (El más famoso), Harry, Gerry , Mary, Barry, Cherry, Karrie, Faerie, Scary, Sherry, Gary, McClary, Huckleberry, Doot (Este es especial y se le conoce por ser el que toca la trompeta en algunas referencias de la comunidad)."
+        ];
+
+        // Emojis 
+        const emojis = [
+            "🧊", // Golem de Hielo
+            "🎧", // P.E.K.K.A. / sonido
+            "⛽", // Elixir / regeneración
+            "🌲", // Tronco
+            "⚡", // Mago Eléctrico
+            "⛏️", // Minero
+            "❄️", // Mago de Hielo voz
+            "🩹", // Curandera Guerrera
+            "💀"  // Esqueletos 
+        ];
+
+        // Paleta (mapea a clases CSS ya definidas en clash.css). Añadir/quitar colores allí si quieres cambiar la paleta.
+        const colors = ['fun-color-0','fun-color-1','fun-color-2','fun-color-3','fun-color-4'];
+
+        // Intervalo en segundos 
+        const intervalSeconds = 7;
+
+        let factIndex = 0;
+        const funFactElement = document.getElementById('funFactText');
+        const alertEl = document.getElementById('funFactAlert');
+
+        // (texto + emoji + color)
+        function applyFact(index){
+            if (!funFactElement || !alertEl) return;
+            // Poner emoji y texto
+            funFactElement.textContent = `${emojis[index]} ${funFacts[index]}`;
+
+            // Cambiar clase de color
+            const toRemove = Array.from(alertEl.classList).filter(c => c.startsWith('fun-color-'));
+            if (toRemove.length) alertEl.classList.remove(...toRemove);
+            alertEl.classList.add(colors[index % colors.length]);
+        }
+
+        // Muestra el siguiente funfact 
+        function showNextFact(){
+            factIndex = (factIndex + 1) % funFacts.length;
+            applyFact(factIndex);
+        }
+
+        // Inicializar mostrando el primer funfact (index 0) con su emoji y color
+        applyFact(factIndex);
+
+        // Iniciar intervalo
+        setInterval(showNextFact, intervalSeconds * 1000);
+    </script>
+</body>
+</html>
